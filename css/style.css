@@ -1,0 +1,35 @@
+html * {
+    font-family: monospace;
+}
+
+
+  .btnSvg {
+    display: inline-block;
+    height: 1em;
+  }
+  
+
+  path {
+    fill:   white;
+    stroke: black;
+  }
+
+  path:hover {
+    fill: red;
+  }
+
+  .numero {
+    margin: 0;
+    text-align: center;
+    font-family: inherit;
+    font-size: 6px;
+  }
+
+  .contenedor {
+    display: inline-block;
+  }
+
+  select {
+    border: 2px;
+
+  }
