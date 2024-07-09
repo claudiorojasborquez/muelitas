@@ -1,35 +1,71 @@
+:root {
+  --main-bg-color: white;
+  --main-color: rgba(55, 53, 47, 0.5);
+}
+
 html * {
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 
-  .btnSvg {
-    display: inline-block;
-    height: 1em;
-  }
+.btnSvg {
+  display: inline-block;
+  height: 52px;
+}
   
 
-  path {
-    fill:   white;
-    stroke: black;
-  }
+path {
+  fill:   var(--main-bg-color);
+  stroke: var(--main-color);
+}
 
-  path:hover {
-    fill: red;
-  }
+path:hover {
+  fill: red;
+}
 
-  .numero {
-    margin: 0;
-    text-align: center;
-    font-family: inherit;
-    font-size: 6px;
-  }
+.numero {
+  margin: 0;
+  text-align: center;
+  font-family: inherit;
+  font-size: 10px;
+}
 
-  .contenedor {
-    display: inline-block;
-  }
+#contenedor {
+  display: flex;
+}
 
-  select {
-    border: 2px;
+#pronostico {
+  display: inline-grid;
+  overflow: hidden;
+  border: 15px;
 
-  }
+}
+
+.pronostico_input {
+  display: none;
+}
+
+.pronostico_label {
+
+  display: flex;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: var(--main-color);
+  background: white;
+  cursor: pointer;
+  transition: background 0.1s;
+  margin: 2px;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  height: 32px;
+  padding: 8px 12px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.pronostico_input:checked + .pronostico_label {
+  background: grey;
+
+}
+

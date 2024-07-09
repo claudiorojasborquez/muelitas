@@ -1,5 +1,5 @@
 function btn_click(el){
-    let color = document.getElementById("prog").value;
+    let color = document.querySelector("#pronostico > input:checked").value;
     el.target.style.fill = color;
 }
 

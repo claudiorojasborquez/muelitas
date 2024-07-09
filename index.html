@@ -6,16 +6,27 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <h3>odontograma</h3>
         <div id="contenedor">
-            <select name="pronostico" id="prog">
+            <!-- <select name="pronostico" id="prog">
                 <option value="#f00">fractura</option>
                 <option value="#0f0">extraccion</option>
                 <option value="#00f">restauracion</option>
                 <option value="#fff">puente</option>
-            </select>
+            </select> -->
+            
             <table id="dentadura">
             </table>
+
+            <div id="pronostico" >
+                <input id="pronostico1"  class="pronostico_input" type="radio" name="pronostico" value="#f00">
+                <label for="pronostico1" class="pronostico_label" >fractura</label>
+                <input id="pronostico2"  class="pronostico_input" type="radio" name="pronostico" value="#0f0">
+                <label for="pronostico2" class="pronostico_label" >extraccion</label>
+                <input id="pronostico3"  class="pronostico_input" type="radio" name="pronostico" value="#00f">
+                <label for="pronostico3" class="pronostico_label" >restauracion</label>
+                <input id="pronostico4"  class="pronostico_input" type="radio" name="pronostico" value="#fff">
+                <label for="pronostico4" class="pronostico_label" >puente</label>
+            </div>
         </div>
     </body>
 </html>
