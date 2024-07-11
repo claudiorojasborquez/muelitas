@@ -5,6 +5,7 @@
   --extraccion-color: #e7f3f8;
   --restauracion-color:#fbd3bd; 
   --hover-color: #d3fbbd;
+  
 }
 
 html * {
@@ -53,8 +54,6 @@ path:hover {
   display: none;
 }
 
-
-
 .pronostico_label {
   display: flex;
   font-size: 14px;
@@ -69,13 +68,16 @@ path:hover {
   padding: 8px 12px;
   align-items: center;
   justify-content: center;
+  width: 8em;
   
 }
 
-#formulario {
+#contenedor_formulario {
   display: inline-grid;
   overflow: hidden;
+  grid-template-columns:1fr;
   border: 15px;
+  height: fit-content;
 }
 
 #guardar_boton {

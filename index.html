@@ -11,7 +11,7 @@
             <table id="dentadura">
             </table>
 
-            <div id="pronostico" >
+            <div id="pronostico" class="contenedor_controlador">
                 <input id="pronostico1"  class="pronostico_input" type="radio" name="pronostico" value="fractura">
                 <label for="pronostico1" class="pronostico_label" >fractura</label>
                 <input id="pronostico2"  class="pronostico_input" type="radio" name="pronostico" value="extraccion">
@@ -21,11 +21,16 @@
                 <input id="pronostico4"  class="pronostico_input" type="radio" name="pronostico" value="puente">
                 <label for="pronostico4" class="pronostico_label" >puente</label>
             </div>
+            <form action="">
+            </form>
 
-            <div id="formulario">
-                <form action="">
-                    <input id="guardar_boton" type="button" value="guardar">
-                </form>
+            <div id="contenedor_formulario" class="contenedor_controlador">
+                
+                    <input id="guardar" class="boton pronostico_input" type="button" value="guardar">
+                    <label for="guardar" class="pronostico_label">guardar</label>
+                    <input id="cargar" class="button pronostico_input" type="button" value="cargar" >
+                    <label for="cargar" class="pronostico_label">cargar</label>
+                
             </div>
         </div>
     </body>
