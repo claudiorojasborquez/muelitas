@@ -1,6 +1,18 @@
 function btn_click(el){
-    let color = document.querySelector("#pronostico > input:checked").value;
-    el.target.style.fill = color;
+    let op = document.querySelector("#pronostico > input:checked").value;
+
+    function cambiarColor(target, color){
+        target.style.fill = color;
+    }
+
+    colores = {
+        "fractura" : getComputedStyle(document.documentElement).getPropertyValue("--fractura-color"),
+        "extraccion": getComputedStyle(document.documentElement).getPropertyValue("--extraccion-color"),
+        "restauracion": getComputedStyle(document.documentElement).getPropertyValue("--restauracion-color")
+    }
+
+
+    cambiarColor(el.target, colores[op])
 }
 
 
